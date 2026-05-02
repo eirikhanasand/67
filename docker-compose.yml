@@ -17,6 +17,7 @@ services:
         distanthorizons:beta
         tectonic
         terralith
+        c2me-neoforge
       MEMORY: "6G"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
