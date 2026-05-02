@@ -14,6 +14,8 @@ services:
       MODRINTH_PROJECTS: |
         create
         create-aeronautics
+        tectonic
+        terralith
       MEMORY: "6G"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
