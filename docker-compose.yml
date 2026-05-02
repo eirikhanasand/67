@@ -3,7 +3,7 @@ services:
     image: itzg/minecraft-server
     container_name: "67"
     mem_limit: 12g
-    cpus: "3.0"
+    cpus: "6.0"
     ports:
       - "${PORT:-5000}:25565"
     environment:
