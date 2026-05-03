@@ -22,7 +22,8 @@ services:
         ferrite-core
         saturn
         spark
-      MEMORY: "12G"
+        command-aliases
+      MEMORY: "10G"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
     volumes:

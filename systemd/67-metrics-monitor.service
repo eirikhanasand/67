@@ -1,0 +1,20 @@
+[Unit]
+Description=67 Minecraft in-game CPU and memory monitor
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/67
+Environment=CONTAINER_NAME=67
+Environment=THRESHOLD_PERCENT=90
+Environment=INTERVAL_SECONDS=30
+Environment=ALERT_COOLDOWN_SECONDS=300
+ExecStart=/home/ubuntu/67/scripts/minecraft-metrics-monitor.sh
+Restart=always
+RestartSec=10
+User=ubuntu
+Group=docker
+
+[Install]
+WantedBy=multi-user.target
