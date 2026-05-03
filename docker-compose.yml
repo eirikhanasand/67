@@ -2,7 +2,7 @@ services:
   minecraft:
     image: itzg/minecraft-server
     container_name: "67"
-    mem_limit: 12g
+    mem_limit: 16g
     cpus: "6.0"
     ports:
       - "${PORT:-5000}:25565"
@@ -23,7 +23,7 @@ services:
         saturn
         spark
         command-aliases
-      MEMORY: "10G"
+      MEMORY: "14G"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
     volumes:
