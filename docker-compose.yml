@@ -24,6 +24,7 @@ services:
         spark
         command-aliases
       MEMORY: "14G"
+      JVM_OPTS: "-XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:ParallelGCThreads=6 -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+UseZGC"
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
     volumes:
